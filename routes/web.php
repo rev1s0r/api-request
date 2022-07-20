@@ -14,4 +14,4 @@ use App\Http\Controllers\ConsumeApiController;
 |
 */
 
-Route::get('/', [ConsumeApiController::class, 'index'])->name('index');
+Route::get('/', [ConsumeApiController::class, 'index']);

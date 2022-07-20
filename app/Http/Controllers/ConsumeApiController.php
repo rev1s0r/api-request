@@ -9,7 +9,7 @@ class ConsumeApiController extends Controller
     public function index() {
 
         $url = 'https://individualizer.databreakers.com/v1/individualizer';
-        $json = '{
+        $data = '{
             "accountId": "notino_cz",
             "recommendation_request": {
             "requests": [
@@ -35,9 +35,7 @@ class ConsumeApiController extends Controller
             ]
             }
             }';
-
-        $data = json_encode($json);
-
+        
         $ch = curl_init($url); 
         curl_setopt($ch, CURLOPT_POST, 1);
         curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
@@ -45,14 +43,21 @@ class ConsumeApiController extends Controller
         curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
         $result = curl_exec($ch);
         curl_close($ch);
-
+        
         $responseData = json_decode($result, TRUE);
 
-        dd($responseData);
-        
+        //$data = print_r($responseData);
+
+        //dd($responseData);
+
+        // return view('welcome', [
+        //     'data' => $responseData
+        // ]);
+
+        return view('welcome', [
+            'data' => $responseData
+        ]);            
     }
-
-
    
 }
 
