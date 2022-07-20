@@ -46,14 +46,6 @@ class ConsumeApiController extends Controller
         
         $responseData = json_decode($result, TRUE);
 
-        //$data = print_r($responseData);
-
-        //dd($responseData);
-
-        // return view('welcome', [
-        //     'data' => $responseData
-        // ]);
-
         return view('welcome', [
             'data' => $responseData
         ]);            
