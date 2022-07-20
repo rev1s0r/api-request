@@ -14,25 +14,6 @@ a {
     color: black;
 }
 
-/* UTILITY */
-.p-small {
-    padding-bottom: 5px;
-}
-.p-medium {
-    padding-bottom: 10px;
-}
-.p-y {
-    padding: 10px 0;
-}
-.m-y {
-    margin: 10px 0;
-}
-
-p {
-    font-size: 1.6rem;
-    line-height: 1.5;
-}
-
 .image {
     text-align: center;
     margin: 0 auto;
@@ -57,7 +38,7 @@ h1 {
     display: block;
     cursor: text;
     font-size: 1.75rem !important;
-    margin: 3rem 0px 1.75rem !important;
+    margin: 3rem 1.75rem !important;
 }
 
 main {
@@ -102,7 +83,7 @@ section::-webkit-scrollbar-track {
 
 section::-webkit-scrollbar-thumb {
     background-color: white;
-    outline: 2px solid rgb(222, 222, 222);
+    outline: 3px solid rgb(222, 222, 222);
   }
 
 section .thumbnail {

@@ -7,9 +7,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
-
-        <title>Laravel</title>
-
+        <title>DATABREAKERS</title>
     </head>
     <body>
 
@@ -24,9 +22,7 @@
                         <polygon fill="currentColor" points="26.87 10.74 24.04 7.92 0 31.96 24.04 56 26.87 53.17 5.66 31.96 26.87 10.74"></polygon>
                     </svg>
                 </div>
-
                 <section class="container" id="slider">
-
                     @foreach ($data['responses']['product_detail']['response']['recommendations'] as $item)
                         <div class="thumbnail">
                             <a href="{{$item['attributes']['link']}}">
@@ -42,35 +38,14 @@
                             </a>
                         </div>
                     @endforeach
-
                 </section>
-
                 <div id="slide-right">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 64" height="32px" width="32px" color="#000000"><polygon fill="currentColor" points="2.96 7.96 0.13 10.79 21.34 32 0.13 53.21 2.96 56.04 27 32 2.96 7.96"></polygon>
                         <polygon fill="currentColor" points="2.96 7.96 0.13 10.79 21.34 32 0.13 53.21 2.96 56.04 27 32 2.96 7.96"></polygon>
                     </svg>
                 </div>
-
             </div>
         </main>
-
-
-
-        <!-- @foreach ($data['responses']['product_detail']['response']['recommendations'] as $item)
-                            <div class="item">
-                                <h3>{{$item['attributes']['name']}}</h3>
-                            </div>
-                        @endforeach -->
-        
-
-       <!-- @foreach ($data['responses']['product_detail']['response']['recommendations'] as $item)
-           <h1>{{$item['itemId']}}</h1>
-           <p>{{$item['score']}}</p>
-           
-           <p>{{$item['attributes']['availability']}}</p>
-           <p></p>
-       @endforeach -->
-
-       <script src="app.js"></script>
+        <script src="app.js"></script>
     </body>
 </html>

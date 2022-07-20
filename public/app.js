@@ -12,8 +12,6 @@ buttonRight.addEventListener('click', function(){
     slider.scrollLeft += 1000;
 })
 
-const maxScrollLeft = slider.scrollWidth - slider.clientWidth;
-
 
 
 
