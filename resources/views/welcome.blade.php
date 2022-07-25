@@ -105,7 +105,6 @@
                     </div>
                 `;
                 document.getElementById("slider").innerHTML = apidata;
-                console.log(values);
             })
         });
 
