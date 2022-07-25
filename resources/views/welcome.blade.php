@@ -107,10 +107,7 @@
                 document.getElementById("slider").innerHTML = apidata;
                 console.log(values);
             })
-
-        }).catch((err=>{
-            console.log(err);
-        }));
+        });
 
     </script>
 
