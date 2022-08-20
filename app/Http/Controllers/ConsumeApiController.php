@@ -50,6 +50,5 @@ class ConsumeApiController extends Controller
             'data' => $responseData
         ]);            
     }
-   
 }
 
