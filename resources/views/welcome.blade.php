@@ -10,7 +10,7 @@
         <title>DATABREAKERS</title>
     </head>
     <body>
-
+    
     <body>
         <main>
             <div class="heading">
@@ -40,9 +40,7 @@
                     @endforeach
                 </section> -->
 
-                <section class="container" id="slider">
-                    
-                        
+                <section class="container" id="slider">                        
                     
                 </section> 
 
@@ -109,8 +107,5 @@
         });
 
     </script>
-
     </body>
 </html>
-
-
